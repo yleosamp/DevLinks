@@ -1,0 +1,82 @@
+/* CONFIGURAÇÕES GLOBAIS */
+
+* {
+  font-family: 'Inter', sans-serif;
+
+  --backgroud-dark: rgba(255, 255, 255, 0.10);
+  --border-dark: rgba(255, 255, 255, 0.50);
+}
+
+#main-page {
+  width: 360px;
+  height: 800px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+body {
+  background: url('../assets/bg-mobile.jpg') no-repeat;
+  color: white;
+  background-size: cover;
+  background-position: top center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTEÚDO */
+
+.content .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 56px;
+}
+
+.content .head img{
+  height: 112px;
+  width: 112px;
+
+  margin-bottom: 9px;
+}
+
+.content .head h1 {
+  font-weight: 500;
+  font-size: 16px;
+
+  margin-bottom: 24px;
+}
+
+.content .links {
+  border: 1px solid red;
+  margin-top: 24px;
+
+  width: 90%;
+}
+
+.content .links .link {
+  background-color: var(--backgroud-dark);
+  padding: 4px;
+
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+
+  margin-bottom: 16px;
+
+  text-align: center;
+  font-size: 16px;
+}
+
+.content .socials {
+  display: flex;
+  gap: 48px;
+  padding: 24px;
+
+
+}
