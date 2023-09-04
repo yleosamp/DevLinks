@@ -5,6 +5,11 @@
 
   --backgroud-dark: rgba(255, 255, 255, 0.10);
   --border-dark: rgba(255, 255, 255, 0.50);
+  --text-dark: white;
+
+  --background-light: rgba(0, 0, 0, 0.05);
+  --border-light: rgba(0, 0, 0, 0.50);
+  --text-light: black;
 }
 
 #main-page {
@@ -16,7 +21,7 @@
 
 body {
   background: url('../assets/bg-mobile.jpg') no-repeat;
-  color: white;
+  color: var(--text-dark);
   background-size: cover;
   background-position: top center;
 }
@@ -54,15 +59,16 @@ body {
 }
 
 .content .links {
-  border: 1px solid red;
   margin-top: 24px;
 
   width: 90%;
 }
 
-.content .links .link {
+.content .links button {
+  width: 100%;
+  padding: 16px;
+
   background-color: var(--backgroud-dark);
-  padding: 4px;
 
   border-radius: 8px;
   border: 1px solid var(--border-dark);
@@ -71,12 +77,48 @@ body {
 
   text-align: center;
   font-size: 16px;
+
+  color: var(--text-dark);
+
+  cursor: pointer;
 }
 
 .content .socials {
   display: flex;
   gap: 48px;
   padding: 24px;
+}
 
+.content .socials .social img {
+  color: var(--text-dark);
+}
 
+.agradecimento {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+}
+
+path {
+  color: var(--text-dark);
+}
+
+/* LIGHT MODE */
+
+body.light{
+  background: url('../assets/bg-mobile-light.jpg') no-repeat;
+  color: var(--text-light);
+  background-size: cover;
+  background-position: top center;
+}
+
+body.light .links button {
+  color: var(--text-light);
+  background-color: var(--background-light);
+  border: 1px solid var(--border-light);
+}
+
+body.light path {
+  color: var(--text-light);
 }
