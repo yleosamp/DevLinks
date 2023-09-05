@@ -1,0 +1,66 @@
+/* LIGHT MODE */
+
+body.light{
+  background: url('../assets/bg-mobile-light.jpg') no-repeat;
+  color: var(--text-light);
+  background-size: cover;
+  background-position: top center;
+}
+
+body.light .links button {
+  color: var(--text-light);
+  background-color: var(--background-light);
+  border: 1px solid var(--border-light);
+}
+
+body.light .content .links button:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  border: 1.5px solid var(--text-light);
+  color: var(--text-light);
+}
+
+body.light path {
+  color: var(--text-light);
+}
+
+body.light .content .head span{
+  background: url('../../public/assets/avatar-light.png');
+  background-size: 112px;
+  height: 112px;
+  width: 112px;
+  margin-bottom: 9px;
+}
+
+body.light .content .socials .social a:hover {
+  background-color: rgba(0, 0, 0, 0.10);
+  border-radius: 50%;
+}
+
+body.light .content .switch button{
+  width: 32px;
+  height: 32px;
+  background: url('../assets/sun.svg') no-repeat center;
+  background-size: 25px;
+
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+}
+
+body.light .content .switch button{
+  right: -1.5px;
+}
+
+body.light .content .switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.50);
+  border-radius: 999px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}

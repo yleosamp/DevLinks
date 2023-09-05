@@ -1,0 +1,37 @@
+/* CONFIGURAÇÕES GLOBAIS */
+
+* {
+  font-family: 'Inter', sans-serif;
+
+  --backgroud-dark: rgba(255, 255, 255, 0.10);
+  --border-dark: rgba(255, 255, 255, 0.50);
+  --text-dark: white;
+
+  --background-light: rgba(0, 0, 0, 0.05);
+  --border-light: rgba(0, 0, 0, 0.50);
+  --text-light: black;
+}
+
+#main-page {
+  width: 360px;
+  height: 800px;
+/*   border: 1px solid red; */
+  margin: auto;
+}
+
+body {
+  background: url('../assets/bg-mobile.jpg') no-repeat;
+  color: var(--text-dark);
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+
+  transition: 400ms;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

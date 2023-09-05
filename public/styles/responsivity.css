@@ -1,0 +1,31 @@
+/* RESPONSIVIDADE */
+
+@media (min-width: 1024px){
+  #main-page {
+    width: 900px;
+    height: 100vh;
+  /*  border: 1px solid red; */
+    margin: auto;
+
+  }
+
+  body {
+    background: url('../assets/bg-desktop.jpg') no-repeat;
+    color: var(--text-dark);
+    background-size: cover;
+    background-position: top center;
+  }
+
+  body.light{
+    background: url('../assets/bg-desktop-light.jpg') no-repeat;
+    color: var(--text-light);
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+@media (max-height: 670px){
+  .agradecimento{
+    visibility: hidden;
+  }
+}

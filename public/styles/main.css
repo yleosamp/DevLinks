@@ -1,0 +1,155 @@
+
+/* CONTEÚDO */
+
+.content .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 56px;
+}
+
+.content .head span{
+  background: url('../../public/assets/avatar.png');
+  background-size: 112px;
+  height: 112px;
+  width: 112px;
+  margin-bottom: 9px;
+
+  transition: 400ms;
+}
+
+.content .head h1 {
+  font-weight: 500;
+  font-size: 16px;
+
+  margin-bottom: 24px;
+}
+
+.content .switch{
+  position: relative;
+  width: 64px;
+}
+
+.content .switch button{
+  width: 32px;
+  height: 32px;
+  background: url('../assets/moon-stars.svg') no-repeat center;
+  background-size: 25px;
+
+  padding: 16px;
+
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1;
+
+  transition: right 400ms;
+}
+
+.content .switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+
+  background-color: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  border-radius: 999px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.content .links {
+  margin-top: 24px;
+
+  width: 90%;
+}
+
+.content .links button {
+  width: 100%;
+  padding: 16px;
+
+  background-color: var(--backgroud-dark);
+
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+
+  margin-bottom: 16px;
+
+  text-align: center;
+  font-size: 16px;
+
+  color: var(--text-dark);
+
+  cursor: pointer;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  transition: 400ms;
+}
+
+.content .links button:hover {
+  width: 100%;
+  padding: 16px;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  border-radius: 8px;
+  border: 1.5px solid var(--text-dark);
+
+  margin-bottom: 16px;
+
+  text-align: center;
+  font-size: 16px;
+
+  color: var(--text-dark);
+
+  cursor: pointer;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.content .socials {
+  display: flex;
+  gap: 32px;
+  padding: 24px;
+
+}
+
+.content .socials .social a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  border-radius: 20%;
+  transition: 400ms;
+}
+
+.content .socials .social a:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 50%;
+}
+
+.agradecimento {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+
+  visibility: visible;
+}
+
+path {
+  color: var(--text-dark);
+  transition: 400ms;
+}
